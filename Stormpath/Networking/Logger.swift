@@ -22,9 +22,7 @@ final class Logger {
     static var logLevel: LogLevel {
         if _isDebugAssertConfiguration() {
             return .Debug
-        } else {
-            return .None
-        }
+        } 
     }
     
     class func log(string: String) {
